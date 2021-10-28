@@ -1,3 +1,15 @@
+:root {
+  --color-brand-light: #ff52b1;
+  --color-brand: #ff1f9a;
+  --color-brand-dark: #ff1f9ac4;
+}
+
+.alt-theme {
+  --color-brand-light: #8fd8f5;
+  --color-brand: #52ceff;
+  --color-brand-dark: #23a2d4;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
