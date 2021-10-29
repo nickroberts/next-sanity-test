@@ -3,6 +3,14 @@ import { render } from '@testing-library/react';
 
 import Index from '../pages/index';
 
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      asPath: '/',
+    };
+  },
+}));
+
 describe('Index', () => {
   it('should render successfully', () => {
     const { baseElement } = render(<Index />);

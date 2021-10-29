@@ -1,0 +1,18 @@
+{
+  "root": "apps/studio",
+  "sourceRoot": "apps/studio",
+  "projectType": "application",
+  "prefix": "template",
+  "targets": {
+    "build": {
+      "executor": "./dist/libs/nx-sanity:build",
+      "options": {}
+    },
+    "serve": {
+      "executor": "./dist/libs/nx-sanity:serve",
+      "options": {}
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["nx-sanity"]
+}

@@ -22,7 +22,6 @@ export function MainMenu({
   className,
   ...props
 }: MainMenuProps) {
-  console.log('activePath', activePath);
   const classList = cn(
     // 'bg-brand text-white py-4 px-4 sm:px-6 lg:px-8 flex justify-start align-center',
     'bg-brand text-white px-4 sm:px-6 flex justify-start align-center',

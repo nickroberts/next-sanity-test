@@ -1,13 +1,11 @@
-import { getGreeting } from '../support/app.po';
+import { getTitles } from '../support/app.po';
 
 describe('site', () => {
   beforeEach(() => cy.visit('/'));
 
-  it('should display welcome message', () => {
-    // Custom command example, see `../support/commands.ts` file
-    cy.login('my-email@something.com', 'myPassword');
-
-    // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome to site!');
+  it('should display title', () => {
+    const h1s = getTitles();
+    h1s.should('have.length', 2);
+    h1s.first().contains('Garlic bread with cheese: What the science tells us');
   });
 });

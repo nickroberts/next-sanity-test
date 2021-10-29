@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nst/sanity": ["libs/nx-sanity/src/index.ts"],
       "@nst/shared/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
